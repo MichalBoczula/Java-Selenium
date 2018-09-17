@@ -7,7 +7,7 @@ public class WebDriverConfig {
     public final static String CHROME = "chrome_driver";
 
     public static WebDriver getDriver(final String driver) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Selenium-drivers\\Chrome\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium-drivers\\Chrome\\chromedriver2.42\\chromedriver.exe");
 
         return driver.equalsIgnoreCase(CHROME)?
                 new ChromeDriver() : null;

@@ -10,7 +10,7 @@ public class EBayTestingApp {
         final WebDriver driver = WebDriverConfig.getDriver(WebDriverConfig.CHROME);
         driver.get("http://www.ebay.com");
 
-        WebElement findLaptop = driver.findElement(By.id("gh-ac"));
+        WebElement findLaptop = driver.findElement(By.name("_nkw"));
         findLaptop.sendKeys("laptop");
         findLaptop.submit();
     }
